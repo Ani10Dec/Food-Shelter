@@ -1,0 +1,345 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+    position: fixed;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    font-family: 'Lobster', sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo h2 {
+    font-size: 2.4em;
+    letter-spacing: 5px;
+    color: rgb(26, 252, 222);
+    transition: color 0.3s ease;
+
+}
+
+.logo p {
+    margin-top: -5px;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    color: rgb(97, 191, 245);
+    text-transform: capitalize;
+}
+
+.logo:hover h2,
+p {
+    color: coral;
+}
+
+.active {
+    border-bottom: 3px solid coral;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+
+.nav-links li a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1em;
+    padding-bottom: 3px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s ease;
+}
+
+.nav-links li a:hover {
+    border-bottom: 3px solid coral;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 4px;
+    background-color: aliceblue;
+    margin: 4px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.burger:hover div {
+    background-color: coral;
+}
+
+.active-navbar h2 {
+    font-size: 2.1em;
+    color: coral;
+}
+
+.active-navbar h2:hover {
+    color: aqua;
+}
+
+.active-navbar p {
+    font-size: 1em;
+}
+
+.active-navbar {
+    min-height: 10vh;
+    z-index: 9999;
+    background-color: rgba(4, 75, 4, 0.945);
+    box-shadow: 0 0 0.8em 0.5em rgb(64, 104, 3);
+}
+
+.active-navbar li a {
+    font-size: 0.95em;
+}
+
+/* ===========================================
+           Media-Queries
+===========================================*/
+
+/*----------from 1025px to 1251px------------*/
+@media (min-width: 1025px) and (max-width: 1251px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    #banner {
+        height: 540px;
+    }
+
+    .logo h2 {
+        font-size: 2.1em;
+    }
+
+    .logo p {
+        font-size: 1.1em;
+    }
+
+    .nav-links {
+        width: 50%;
+    }
+
+    .nav-links a {
+        font-size: 1.05em;
+    }
+}
+
+
+/*----------from 769px to 1024px------------*/
+@media (min-width: 787px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #banner {
+        height: 500px;
+    }
+
+    .logo h2 {
+        font-size: 1.9em;
+    }
+
+    .logo p {
+        font-size: 1.1em;
+    }
+
+    .nav-links {
+        width: 58%;
+    }
+
+    .nav-links a {
+        font-size: 0.95em;
+    }
+}
+
+/*----------from 481px to 768px------------*/
+@media screen and (min-width: 481px) and (max-width: 786px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #banner {
+        height: 460px;
+    }
+
+    .logo h2 {
+        font-size: 2em;
+    }
+
+    .logo p {
+        font-size: 1em;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        right: 0px;
+        top: 11vh;
+        height: 89vh;
+        background-color: rgb(29, 83, 29);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+        color: white;
+        z-index: 999;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .toggle .line1 {
+        transform: rotate(40deg) translateY(1px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(-40deg) translateY(-1px);
+
+    }
+}
+
+/*----------from 321px to 480px------------*/
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    #banner {
+        height: 300px;
+    }
+
+    .logo h2 {
+        font-size: 1.8em;
+    }
+
+    .logo p {
+        font-size: 0.9em;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        right: 0px;
+        top: 13vh;
+        height: 87vh;
+        background-color: rgba(29, 83, 29, 0.932);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+        color: white;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .toggle .line1 {
+        transform: rotate(40deg) translateY(1px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(-40deg) translateY(-1px);
+
+    }
+
+}
+
+/*----------from 0px to 320px------------*/
+@media screen and (max-width: 320px) {
+    #banner {
+        height: 300px;
+    }
+
+    .logo h2 {
+        font-size: 1.7em;
+    }
+
+    .logo p {
+        font-size: 0.9em;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        right: 0px;
+        top: 13vh;
+        height: 85vh;
+        background-color: rgba(29, 83, 29, 0.932);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+
+    .nav-links a {
+        font-size: 0.9em;
+        color: white;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .toggle .line1 {
+        transform: rotate(40deg) translateY(1px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(-40deg) translateY(-1px);
+
+    }
+}

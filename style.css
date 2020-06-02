@@ -1,0 +1,611 @@
+/* font-family: 'Lobster', cursive;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#banner {
+    height: 640px;
+    background-image: linear-gradient(to right bottom, rgba(48, 45, 45, 0.767), rgba(51, 41, 41, 0.644)), url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*===================== Universal-Styele ====================*/
+.about_us h3,
+.container_3 h3,
+.review_conatiner h3,
+.signUp_container h3,
+.Contact_container_allInOne h3 {
+    font-family: sans-serif;
+    font-size: 2.4em;
+    color: rgb(68, 68, 68);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.about_us h3::after,
+.container_3 h3::after,
+.review_conatiner h3::after,
+.signUp_container h3::after,
+.Contact_container_allInOne h3::after {
+    display: block;
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: coral;
+    margin: 0.3em auto 0.8em auto
+}
+
+.review_conatiner h3,
+.Contact_container_allInOne h3 {
+    color: rgb(255, 255, 255);
+}
+
+/*===================== Hero-Content ====================*/
+.hero-content {
+    padding-top: 20%;
+    padding-left: 8%;
+}
+
+.hero-content h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.1em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    line-height: 1.4em;
+    padding-bottom: 0.5em;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.7em 3em;
+    border-radius: 5em;
+    font-size: 1.1em;
+    font-family: 'Roboto', cursive;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+.hero-btn-1 {
+    margin-right: 1em;
+    color: white;
+    background-color: coral;
+    border: 2px solid coral;
+    transition: all 0.2s ease;
+}
+
+.hero-btn-1:hover {
+    background-color: rgb(240, 117, 72);
+}
+
+.hero-btn-2 {
+    color: coral;
+    border: 2px solid coral;
+    background: none;
+    transition: all 0.2s ease;
+}
+
+.hero-btn-2:hover {
+    background-color: rgb(252, 138, 97);
+    color: white;
+}
+
+
+/*===================== About-Us ====================*/
+
+.about_us {
+    padding: 3em 18em 5em 18em;
+}
+
+.about_us p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: rgb(61, 60, 60);
+    letter-spacing: 1.2px;
+    line-height: 1.5em;
+}
+
+
+/*===================== Features-Content ====================*/
+.features {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    width: 21%;
+}
+
+.box img {
+    width: 3.8em;
+    display: block;
+}
+
+.box h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.32em;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    display: block;
+}
+
+.box p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgb(83, 83, 83);
+    line-height: 1.8em;
+}
+
+/*===================== Meals-Content ====================*/
+.active_meal {
+    display: none;
+}
+
+.container_2 {
+    padding-top: 4.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container_2 figure {
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.container_2 img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.container_2 img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+/*===================== Mobile-App ====================*/
+.container_3 {
+    background-color: #f4f4f4;
+    padding: 4em 0;
+}
+
+.mobile_app {
+    width: 65%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.5em;
+}
+
+.mobile_app_button img {
+    border: 0px solid;
+    border-radius: 20px;
+    width: 12em;
+    height: auto;
+    cursor: pointer;
+}
+
+.mobile_app_button {
+    margin-top: 2em;
+}
+
+#app_store {
+    margin-right: 2.2em;
+}
+
+#mobile_screen {
+    width: 25%;
+    height: auto;
+}
+
+.mobile_app_steps {
+    margin-left: 8em;
+    margin-top: 2em;
+}
+
+.mobile_app_steps p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: rgb(46, 45, 45);
+    letter-spacing: 1.1px;
+}
+
+.work_step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.step {
+    font-size: 1.5em;
+    border: 2px solid coral;
+    padding: 0.3em 0.5em;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+/*===================== Review-Section ====================*/
+#container_4 {
+    background-image: linear-gradient(rgba(29, 28, 28, 0.856), #2c2727ce), url(images/review_background.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.review_conatiner {
+    padding: 4em 0;
+}
+
+.reviews_conainer {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-box {
+    width: 30%;
+    display: block;
+}
+
+.review-box img {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-right: 1.5em;
+}
+
+.review-box p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.7em;
+    font-style: italic;
+}
+
+.review-box::before {
+    content: "\201C";
+    font-size: 400%;
+    color: white;
+    position: relative;
+    top: 0.4em;
+}
+
+cite {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+cite p {
+    font-size: 1.2em !important;
+    border-bottom: 2px solid coral;
+}
+
+
+/*===================== SignUp-Section ====================*/
+#conatiner_5 {
+    background-color: #f4f4f4;
+    padding: 4em 0;
+}
+
+.sign_up_Section {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+.signUp-box {
+    background-color: white;
+    border-radius: 30px;
+}
+
+.plan-name {
+    font-family: 'Roborto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: rgb(49, 48, 48);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-bottom: 0.9em;
+    display: block;
+}
+
+.plan-price {
+    font-size: 3.5em;
+    font-weight: 300;
+    color: rgb(82, 81, 81);
+    display: block;
+    padding-bottom: 0.2em;
+    letter-spacing: 3px;
+}
+
+.plan-price span {
+    color: coral;
+    font-size: 0.4em;
+}
+
+.plan-price-meal {
+    font-family: 'Roborto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: rgb(80, 80, 80);
+    display: block;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-transform: capitalize;
+
+}
+
+.signUp-1-1,
+.signUp-2-1,
+.signUp-3-1 {
+    border-bottom: 0.5px solid rgb(219, 219, 219);
+    padding: 1em 2.5em 1em 1em;
+}
+
+
+.signUp-1-2,
+.signUp-2-2,
+.signUp-3-2 {
+    border-bottom: 0.5px solid rgb(219, 219, 219);
+    padding: 1em 2.5em 1em 1em;
+}
+
+.signUp-1-2 p,
+.signUp-2-2 p,
+.signUp-3-2 p {
+    color: rgb(66, 66, 66);
+    text-transform: capitalize;
+    line-height: 2em;
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.signUp-1-2 span,
+.signUp-2-2 span,
+.signUp-3-2 span {
+    filter: invert(100%);
+    margin-right: 1em;
+}
+
+.Sign_Up_btn button {
+    text-align: center;
+    font-size: 1.1em;
+    color: coral;
+    border: 1px solid coral;
+    padding: 0.6em 1.5em;
+    text-transform: capitalize;
+    font-family: 'Roborto', sans-serif;
+    letter-spacing: 1px;
+    background: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.signUp-1-3 button {
+    background-color: coral;
+    color: white;
+}
+
+.signUp-1-3 button:hover {
+    background-color: rgb(236, 104, 56);
+}
+
+.signUp-2-3 button:hover {
+    background-color: coral;
+    color: white;
+}
+
+.signUp-3-3 button:hover {
+    background-color: coral;
+    color: white;
+}
+
+.signUp-1-3,
+.signUp-2-3,
+.signUp-3-3 {
+    text-align: center;
+    padding: 1.5em 0;
+    background-color: #fcfcfc;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/*===================== ContactUs-Section ====================*/
+#conatainer_6 {
+    padding: 3.5em 4em 2.5em 0;
+    /* background-color: rgba(2, 2, 43, 0.856); */
+    background-image: linear-gradient(to right bottom, rgba(28, 14, 105, 0.466), rgba(7, 28, 95, 0.582)), url(images/contact-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contactUs_container {
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+form h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: rgb(243, 107, 152);
+    padding-bottom: 0.6em;
+}
+
+
+.contact {
+    width: 40%;
+    justify-content: space-around;
+}
+
+.contact-row {
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.8em;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 48%;
+    padding: 0.9em;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(152, 146, 177);
+    color: white;
+    font-size: 0.9em;
+}
+
+textarea {
+    width: 100%;
+    height: 160px;
+    font-size: 1em;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+    outline: none;
+    background-color: rgb(204, 204, 204);
+    color: #000;
+}
+
+::placeholder {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    color: floralwhite;
+}
+
+#firstName,
+#email {
+    margin-right: 6%;
+}
+
+.contact-btn {
+    padding-top: 0.5em;
+}
+
+.contact-btn button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 1px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.6em 2.2em;
+    background-color: rgb(243, 107, 152);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-btn button:hover {
+    background-color: rgb(247, 91, 143);
+
+}
+
+.contact_info h4,
+.followUs h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: rgb(247, 91, 143);
+    padding-bottom: 0.8em;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.address p,
+.number p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+    color: rgb(243, 243, 243);
+    letter-spacing: 1px;
+    padding-bottom: 1em;
+    line-height: 1.5em;
+}
+
+.number p {
+    padding-bottom: 3em;
+}
+
+.followUs a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: greenyellow;
+    margin-right: 1em;
+    transition: color 0.2s ease;
+}
+
+.followUs a:hover {
+    color: rgb(247, 91, 143);
+}
+
+
+#footer {
+    background-color: rgb(4, 59, 131);
+    text-align: center;
+    padding: 0.2em 0;
+}
+
+#footer p {
+    color: white;
+    font-family: cursive;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
